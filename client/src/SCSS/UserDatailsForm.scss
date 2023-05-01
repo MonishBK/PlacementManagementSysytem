@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixin';
+
+
+.User_amin_div{
+    widows: 100vw;
+    height: 100vh;
+    background-color: pink;
+    @include flexCenter;
+
+    .inner_user_div{
+        width: 60%;
+        height: 95%;
+        background-color: aliceblue;
+
+        .u_from{
+            // background-color: aqua; 
+            width: 100%;
+            height: 580px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow-y: scroll;
+            /* padding-top: 20px; */
+            padding: 20px 180px;
+
+            .u_data_frm_div{
+                width: 90%;
+                margin: .7rem 0rem; 
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: transparent;
+                /* background-color: chartreuse; */
+
+                input{
+                    width: 100%;  
+                    padding: 1.3rem 2rem;
+                    border-radius: 1rem;
+                    font-size: 1.8rem;
+                    outline: none;
+                    border:1px solid gray ;
+                    background: transparent;
+                }
+
+                textarea{
+                    width: 100%;  
+                    padding: 1.3rem 2rem;
+                    border-radius: 1rem;
+                    font-size: 1.8rem;
+                    outline: none;
+                    /* border:1px solid gray ; */
+                    background: transparent;
+                    resize: none;
+                }
+            
+            }
+        
+        }
+    }
+}

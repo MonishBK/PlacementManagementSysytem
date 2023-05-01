@@ -1,0 +1,56 @@
+.chart-title {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #a7a6a6;
+}
+
+.chart-box {
+  height: 300px;
+}
+
+.chart-container {
+  height: 220px;
+  /* background-color: rgb(152, 219, 219); */
+}
+
+.dashboard-top-card {
+  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  color: #ffff;
+  padding: 10px;
+  display: flex;
+}
+
+.dashboard-top-card-icon {
+  font-size: 40px;
+  margin: 7px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.color-1 {
+  background-color: #065bcb;
+}
+.color-2 {
+  background-color: #ff357e;
+}
+.color-3 {
+  background-color: #12c889;
+}
+.color-4 {
+  background-color: #7c5dd6;
+}
+
+.TeamPersonImg {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.RewardPerson {
+  height: 60px;
+  width: 60px;
+  margin-right: 5px;
+  border-radius: 60px;
+}

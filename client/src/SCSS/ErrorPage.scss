@@ -1,0 +1,81 @@
+@import "variables";
+@import "mixin";
+
+
+.main_error_con{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 3000;
+    @include flexCenter;
+
+    .inner_err_pg{
+        width: 90%;
+        height: 90%;
+        // background-color: chartreuse;
+        display: flex;
+        align-items: center;
+        // justify-content: space-evenly;
+        flex-direction: column;
+
+        .error_img{
+            width: 60%;
+            height: 80%;
+            // background-color: aquamarine;
+            background-image: url("../images/error-pg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .error_header{
+            width: 100%;
+            height: 10%;
+            text-align: center;
+            font-weight: bold;
+            // background-color: aqua;
+            font-size: 2rem;
+        }
+
+        .error_desc{
+            width: 100%;
+            height: 10%;
+            // background-color: chocolate;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .error_buttons{
+            width: 100%;
+            height: 10%;
+            // background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button{
+                padding: 15px 25px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin: 0px 20px 0px 20px;
+                border-radius: 20px;
+                background-color: $nav-clr;
+                color: #fff;
+                outline: none;
+                border: 1px solid $nav-clr;
+                cursor: pointer;
+
+                &:hover{
+                    color: $nav-clr;
+                    background-color: #fff;
+                }
+            }
+
+        }
+        
+    }
+
+}

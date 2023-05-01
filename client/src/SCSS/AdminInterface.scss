@@ -1,0 +1,374 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
+
+.main_ui_con{
+    width: 100vw;
+    height: 100vh;
+    background-color: $user-ui-bg;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    // .nav_hide{
+    //     width: 100%;
+    //     height: 100%;
+    // }
+
+    // CSS FOR USER LEFT NAVIGATION
+    .user_navbar{
+        width: 20vw;
+        height: 100vh;
+        background-color: #2387e2;
+        background-color: #fff; 
+        box-shadow: -11px 12px 19px #202020d4;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // scroll-behavior: smooth;
+        // overflow-y: scroll;
+    
+        .user_nav_inner{
+            width: 98%;
+            height: 100%;
+            // background-color: aquamarine;
+
+            .u_n_box1{
+                width: 100%;
+                height: 20%;
+                // background-color: blanchedalmond;
+
+                .school_name{
+                    width: 100%;
+                    height: 100%;
+                    // background-color: cadetblue;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    font-family: 'Crete Round', serif;
+                    // font-family: 'Pushster', cursive;
+                    font-size: 2.3rem + 0.2rem;
+                    font-weight: 900;
+                    letter-spacing: 2px;
+                    color: $main-blue;
+                    
+                    span{
+                        font-size: 1.8rem;
+                        font-weight: 50;
+                        color: #808080;
+                        
+                    }
+                }
+            }
+
+            .inner_box_scroll{
+                width: 100%;
+                height: 90%;
+                // background-color: yellow;
+                scroll-behavior: smooth;
+                overflow-y: scroll;
+
+                .u_n_box2{
+                    width: 100%;
+                    height: 58%;
+                    // height: 32%;
+                    // background-color: cyan; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .user_nav_items{
+                        width: 90%;
+                        height: 100%;
+                        // background-color: coral;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+    
+                        .u_head{
+                            width: 100%;
+                            height: 8%;
+                            // background-color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.5rem;
+                            cursor: context-menu;
+                        }
+    
+                        .u_body{
+                            width: 100%;
+                            height: 80%;
+                            // background-color: yellow;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-direction: column;
+    
+                            .item_box{
+                                width: 100%;
+                                height: 18%;
+                                // background-color: red;
+                                // margin-top: 5px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 1.5rem;
+                                font-weight: 490;
+    
+                                .inner_item{
+                                    width: 65%;
+                                    height: 100%;
+                                    // background-color: greenyellow;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+    
+                                    a{
+                                        text-decoration: none;
+                                        color: #000;
+                                        margin-left: 6px;
+                                        display: flex;
+                                        font-size: 2.2rem;
+    
+                                        // .u_active{
+                                        //     color: $main-blue;
+                                        // }
+    
+                                        // .inactive{
+                                        //     color: #000;
+                                        // }
+    
+                                        span{
+                                            font-size: 1.6rem;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            margin-left: 10px;
+                                        }
+                                        
+                                        // &:hover{
+                                        //     color: $main-blue;
+                                        //     font-weight: 500;
+                                        // }
+    
+                                    }
+    
+                                    &:hover{
+                                        color: $main-blue;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+            .u_n_box3{ 
+                width: 100%;
+                height: 25%;
+                // height: 55px;
+                // background-color: orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 8px;
+                scroll-behavior: smooth;
+                overflow-y: scroll;
+
+                .user_general_items{
+                    width: 90%;
+                    height: 100%;
+
+                    .general_head{
+                        width: 100%;
+                        height: 20%;
+                        // background-color: azure;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                        cursor: context-menu;
+                    }
+
+                    .general_body{
+                        width: 100%;
+                        height: 80%;
+                        // background-color: coral;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: column;;
+
+                        .g_box{
+                            width: 100%;
+                            height: 30%;
+                            // background-color: chartreuse;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .inner_g_box{
+                                width: 65%;
+                                height: 100%;
+                                // background-color: greenyellow;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+
+                                a{
+                                    text-decoration: none;
+                                    color: #000;
+                                    margin-left: 6px;
+                                    display: flex;
+                                    font-size: 2.2rem;
+                                    font-weight: 490;
+
+                                    span{
+                                        font-size: 1.6rem;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    &:hover{
+                                        color: $main-blue;
+                                        font-weight: 500;
+                                    }
+
+                                }
+                            
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    // CSS FOR USER TOP NAVIGATION
+    .user_nav_top{
+        width: 80vw;
+        height: 50px;
+        background-color: #ffff;
+        position: fixed;
+        box-shadow: 12px -11px 19px #202020d4;
+        margin-left: 20.1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inner_user_nav_top{
+            width: 92%;
+            height: 100%;
+            // background-color: chartreuse;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .user_pro_top{
+                width: 180px;
+                height: 85%;
+                // background-color: #d2691e;
+                // background-color:#d9d6d68f;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border: 2px solid #c5c0c08f;
+                // border: 2px solid $btn-error;
+
+                .user_pro_pic{
+                    width: 20%;
+                    height: 90%;
+                    background-color: #808080;
+                    border-radius: 50%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .user_pro_name{
+                    width: 70%;
+                    height: 90%;
+                    // background-color: bisque;
+                    overflow: hidden;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+
+            }
+
+            .logout_icon{
+                width: 40px;
+                height: 40px;
+                // background-color: aqua;
+                margin: 10px;
+                font-size: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // CSS FOR USER BODY
+    .user_body{
+        width: 80vw;
+        height: 91vh;
+        // background-color: gray;
+        // scroll-behavior: smooth;
+        // overflow-y: scroll;
+        margin-left: 20vw;
+        margin-top: 55px;
+        overflow: hidden;
+
+        .inner_ui_body{
+            width: 100%;
+            // height: 2000px;
+            // background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+
+    }
+}
+
+a.active{
+    color: $main-blue;
+    font-weight: 500;
+}
+
+
+a.inactive{
+    color: #000;
+    font-weight: 450;
+}
+
+// .logout_symbol{
+//     color: #0000;
+//     // font-size: 2rem;
+// }
+
+
+
+

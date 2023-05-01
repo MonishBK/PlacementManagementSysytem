@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.dashboard_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+  padding: 0px 12px 0px 12px;
+}
+
+.dashboard_container .dash_head {
+  width: 95%;
+  height: 50px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  color: gray;
+}
+
+.dashboard_container .f_status {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+.dashboard_container .f_status .status_box {
+  width: 250px;
+  height: 230px;
+  background-color: #fff;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 1px 1px 7px -5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dashboard_container .f_status .status_box .status_icon {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard_container .f_status .status_box .status_icon .s_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dashboard_container .f_status .status_box .status_num {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: gray;
+}
+
+.dashboard_container .f_status .status_box .status_title {
+  width: 100%;
+  height: 10%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #686767;
+  font-weight: 500;
+}
+
+.dashboard_container .s_status {
+  width: 100%;
+  height: 45vh;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dashboard_container .s_status .s_inner_box {
+  width: 25vw;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.753);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 1px 1px 13px rgba(116, 116, 116, 0.473);
+}
+
+.dashboard_container .s_status .s_inner_box h3 {
+  width: 90%;
+  padding: 5px 15px;
+  border-bottom: 1px solid black;
+}
+
+.dashboard_container .s_status .s_inner_box .s_inner_body {
+  width: inherit;
+  height: 80%;
+  padding: 0px 10px;
+}
+
+.dashboard_container .placed_students_con {
+  width: 90%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.dashboard_container .placed_students_con .placed_btn_con {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: #fff;
+  cursor: pointer;
+  clip-path: polygon(0% 0%, 75% 0%, 86% 47%, 75% 100%, 0% 100%);
+}
+
+.dashboard_container .placed_students_con .p_s {
+  background-color: #065bcb;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #065bcb;
+  transition: all .5s;
+}
+
+.dashboard_container .placed_students_con .p_s:hover {
+  z-index: 5;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+  transform: scale(1.08, 1.08);
+}
+
+.dashboard_container .placed_students_con .n_p_s {
+  background-color: #12c889;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #12c889;
+  transition: all .5s;
+}
+
+.dashboard_container .placed_students_con .n_p_s:hover {
+  z-index: 5;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+  transform: scale(1.08, 1.08);
+}
+
+.dash_box {
+  width: 18.7vw;
+  height: 18vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dash_box .icon_dash_box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash_box .icon_dash_box .icon_rotate {
+  animation: rotating 1s linear;
+}
+
+.dash_box .right_dash_box {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dash_box .right_dash_box .con_val {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.dash_box .right_dash_box .dsah_title {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.over_dash_con {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.445);
+  position: absolute;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.over_dash_con .inner_dash_con {
+  width: 70vw;
+  height: 70vh;
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+}
+
+.over_dash_con .inner_dash_con h1 {
+  border-bottom: 1px solid black;
+}
+
+.over_dash_con .inner_dash_con .student_hdr {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.over_dash_con .inner_dash_con .student_hdr .hrd_parts {
+  width: 22%;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.over_dash_con .inner_dash_con .student_hdr .s_db_p1 {
+  width: 10%;
+}
+
+.over_dash_con .inner_dash_con .con_body {
+  height: 55vh;
+  margin-top: 5px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.over_dash_con .inner_dash_con .disbale_btn_std_list {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.over_dash_con .inner_dash_con .disbale_btn_std_list:hover {
+  color: red;
+}
+/*# sourceMappingURL=AdminDashboard.css.map */

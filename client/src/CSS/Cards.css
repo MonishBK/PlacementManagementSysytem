@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.feeds_card_main {
+  width: inherit;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feeds_card_main .inner_feeds {
+  width: 43vw;
+  height: 60vh;
+}
+
+.feeds_card_main .inner_feeds .feeds_img {
+  width: inherit;
+  height: 33vh;
+  background-position: center;
+}
+
+.feeds_card_main .inner_feeds .feeds_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.feeds_card_main .inner_feeds .feeds_title {
+  width: 43vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.feeds_card_main .inner_feeds .feeds_title h1 {
+  width: 41vw;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0px 8px 0px 8px;
+  font-size: 2.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+}
+
+.feeds_card_main .inner_feeds .feeds_desc {
+  width: inherit;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feeds_card_main .inner_feeds .feeds_desc p {
+  width: 41vw;
+  height: 11vh;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feeds_card_main .inner_feeds .feeds_desc .read_more_con {
+  width: 41vw;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3px;
+}
+
+.feeds_card_main .inner_feeds .feeds_desc .read_more_con span {
+  font-size: 1.7rem;
+  color: #1080ea;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.feeds_card_main .inner_feeds .btn_created_time {
+  width: inherit;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+
+.feeds_card_main .inner_feeds .btn_created_time .creted_time {
+  width: 80%;
+  height: inherit;
+}
+
+.feeds_card_main .inner_feeds .btn_created_time .creted_time p {
+  width: inherit;
+  height: inherit;
+  font-size: 1.5rem;
+  color: gray;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.feeds_card_main .inner_feeds .btn_created_time .applynow_btn {
+  font-size: 2rem;
+  padding: 3px 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #1080ea;
+  outline: none;
+  margin-right: 5px;
+  border: 1px solid #1080ea;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.feeds_card_main .inner_feeds .btn_created_time .applynow_btn:hover {
+  color: #1080ea;
+  background-color: #fff;
+}
+/*# sourceMappingURL=Cards.css.map */

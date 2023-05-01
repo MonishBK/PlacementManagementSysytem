@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.admin_student_con {
+  width: 100%;
+  height: 80vh;
+  padding: 15px;
+}
+
+.admin_student_con .student_header {
+  width: 100%;
+  height: 10%;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.admin_student_con .student_header .std_hrd {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.admin_student_con .student_header .std_hrd label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.admin_student_con .student_header .std_hrd select {
+  width: 50%;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.admin_student_con .student_header .std_hrd input {
+  padding: 3px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.admin_student_con .student_header .std_hrd button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.admin_student_con .student_header .std_hrd .addcom {
+  text-decoration: underline;
+  color: #1080ea;
+  cursor: pointer;
+}
+
+.admin_student_con .student_header .s_year {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin_student_con .student_header .s_year label {
+  width: 60%;
+}
+
+.admin_student_con .student_header .s_year .date_picker {
+  width: 60%;
+}
+
+.admin_student_con .student_header .btn_search {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.admin_student_con .student_header .btn_search button:nth-child(2) {
+  background-color: #1080ea;
+  color: #ffff;
+  border: 1px solid #1080ea;
+}
+
+.admin_student_con .cmp_heard {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.admin_student_con .cmp_heard .cmp_hdr {
+  width: 30%;
+}
+
+.admin_student_con .cmp_heard .cmp_hdr .check_box {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+}
+
+.admin_student_con .cmp_heard .chk_div {
+  width: 8%;
+  height: 70%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.admin_student_con .student_list {
+  width: 100%;
+  height: 80vh;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.admin_student_con .student_list .std_hearder_row {
+  width: 100%;
+  height: 35px;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.admin_student_con .student_list .std_hearder_row .std_hearder_parts {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.admin_student_con .student_list .std_hearder_row .s_p1 {
+  width: 10%;
+}
+
+.admin_student_con .student_list .std_hearder_row .s_p5 {
+  width: 5%;
+}
+
+.admin_student_con .student_list .std_lists {
+  height: 70vh;
+  overflow: hidden;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.admin_student_con .student_list .std_lists .no_data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.react-datepicker__year--container {
+  width: 250px;
+  height: 150px;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+  display: inline-block;
+  width: 5rem;
+  margin: 4px;
+  font-size: 1.5rem;
+}
+
+.react-datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 1.3rem;
+  padding: 10px 26px 10px 28px;
+  position: relative;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+  display: inline-block;
+  width: 5rem;
+  margin: 5px;
+}
+
+.react-datepicker__year-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+
+.react-datepicker-year-header {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+  display: inline-block;
+  width: 6rem;
+  margin: 5px;
+}
+
+.add_comany_div {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.507);
+  left: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_comany_div .inner_add_con {
+  width: 70vw;
+  height: 80vh;
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add_comany_div .inner_add_con .disbale_btn {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.add_comany_div .inner_add_con .disbale_btn:hover {
+  color: red;
+}
+
+.add_comany_div .inner_add_con .company_details {
+  width: 67.5vw;
+  height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_comany_div .inner_add_con .company_details form {
+  width: 50vw;
+  height: inherit;
+}
+
+.add_comany_div .inner_add_con .company_details form .add_comp_btn {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=AdminStudent.css.map */

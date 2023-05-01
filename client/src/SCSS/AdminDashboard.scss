@@ -1,0 +1,302 @@
+@import "mixin";
+@import "variables";
+
+.dashboard_container{
+    width: 100%;
+    height: 100%;
+    // background-color: aqua;
+    @include flexCenter();
+    flex-direction: column;
+    overflow: scroll;
+    padding: 0px 12px 0px 12px;
+
+    .dash_head{
+        width: 95%;
+        height: 50px;
+        // background-color: antiquewhite;     
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 600;
+        color: gray;
+    }
+
+    .f_status{
+        width: 100%;
+        // height: 100px;
+        // background-color: chartreuse;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 5px;
+
+        .status_box{
+            width: 250px;
+            height: 230px;
+            // border-radius: 10px;
+            background-color: #fff;
+            margin: 10px 0px 10px 0px;
+            box-shadow: 1px 1px 7px -5px black;
+            @include flexCenter();
+            flex-direction: column;
+
+            .status_icon{
+                width: 100%;
+                height: 20%;
+                // background-color: red;
+                @include flexCenter();
+
+                .s_icon{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    // background-color: #0d67ff2e;
+                    // background-color: #fdce373b;
+                    // background-color: #ff030342;
+                    // background-color: #00ff1a42;
+                }
+            }
+
+            .status_num{
+                width: 100%;
+                height: 40%;
+                // background-color: yellow;
+                @include flexCenter();
+                font-size: 6.5rem;
+                font-weight: 700;
+                color: gray;
+            }
+
+            .status_title{
+                width: 100%;
+                height: 10%;
+                // background-color: red;
+                font-size: 1.5rem;
+                @include flexCenter();
+                color: rgb(104, 103, 103);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .s_status{
+        width: 100%;
+        height: 45vh;
+        margin-top: 2rem;
+        // background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; 
+
+        .s_inner_box{
+            width: 25vw;
+            height: inherit;
+            background-color: rgba(255, 255, 255, 0.753);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            box-shadow: 1px 1px 13px rgba(116, 116, 116, 0.473);
+
+            h3{
+                width: 90%;
+                padding: 5px 15px;
+                border-bottom: 1px solid black;
+            }
+            .s_inner_body{
+                width: inherit;
+                height: 80%;
+                padding: 0px 10px;
+                // background-color: orange;
+            }
+        }
+    }
+
+    .placed_students_con{
+        width: 90%;
+        height: 15vh;
+        // background-color: aquamarine; 
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 15px;
+
+        .placed_btn_con{
+            width: 50%;
+            height: 80%;
+            @include flexCenter;
+            font-size: 2rem;
+            background-color: #fff;
+            cursor: pointer;
+            // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 75% 0%, 86% 47%, 75% 100%, 0% 100%);
+        }
+        .p_s{
+            background-color: #065bcb;
+            color: #fff;
+            font-weight: bold;
+            border: 2px solid #065bcb;
+            transition: all .5s;
+
+            &:hover{
+                // background-color: #fff;
+                // color: #065bcb;
+                z-index: 5;
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); 
+                transform: scale(1.08, 1.08);
+            }
+
+        }
+
+        .n_p_s{
+            background-color: #12c889;
+            color: #fff;
+            font-weight: bold;
+            border: 2px solid #12c889;
+            transition: all .5s;
+
+            &:hover{
+                // background-color: #fff;
+                // color: #12c889;
+                z-index: 5;
+                 box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); 
+                transform: scale(1.08, 1.08);
+            }
+        }
+    }
+
+}
+
+
+// DashBoardCard2 css
+
+.dash_box{
+    width: 18.7vw;
+    height: 18vh;
+    // background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    
+    .icon_dash_box{
+        width: 30%;
+        height: 100%;
+        // background-color: antiquewhite;
+        @include flexCenter;
+        
+        .icon_rotate{ 
+            // animation: rotating 2s linear infinite;
+            animation: rotating 1s linear ;
+        }
+    }
+
+    .right_dash_box{
+        width: 70%;
+        height: 100%;
+        // background-color: aquamarine;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .con_val{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .dsah_title{
+            font-size: 1.7rem;
+            color: #fff;
+            // background-color: pink;
+        }
+    }
+}
+ @keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+// OverConpaner for placed students
+.over_dash_con{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.445);
+    position: absolute;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    @include flexCenter;
+    display: none;
+    // background-color: yellowgreen;
+
+    .inner_dash_con{
+        width: 70vw;
+        height: 70vh;
+        // height: 50vh;
+        background-color: #fff;
+        // background-color: aquamarine;
+        padding: 15px;
+        position: relative;
+        // overflow: scroll;
+        // scroll-behavior: smooth;
+
+        h1{
+
+            border-bottom: 1px solid black;
+        }
+        .student_hdr{
+            width: 100%;
+            height: 5vh;
+            // background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .hrd_parts{
+                width: 22%;
+                font-size: 2rem;
+                font-weight: bold;
+                @include flexCenter;
+                background-color: #fff;
+
+            }
+            .s_db_p1{
+                width: 10%;
+                // background-color: orange;
+            }
+
+        }
+
+        .con_body{
+            // width: ;
+            height: 55vh;
+            // height: 40vh;
+            // background-color: $main-outer-bg;
+            margin-top: 5px;
+            overflow: scroll;
+            scroll-behavior: smooth;
+        }
+
+        .disbale_btn_std_list{
+            // background-color: antiquewhite;
+            position: absolute;
+            font-size: 2.5rem;
+            top: 2px;
+            right: 10px;
+            cursor: pointer;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+}

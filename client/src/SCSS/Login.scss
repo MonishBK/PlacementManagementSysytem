@@ -1,0 +1,242 @@
+@import "mixin";
+@import "variables";
+
+// Login page
+.l_m_d{
+    width: 100vw;   
+    height: 100vh;
+    background-color: #000; 
+    position: relative;
+    @include flexCenter;
+    overflow: hidden;
+
+    .c_shape{
+        width: 40%;
+        height: 70%;
+        background-color: cyan;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .s_c1{
+        right: 0;
+        background: linear-gradient(306deg, rgba(0,181,255,1) 20%, rgb(0, 255, 196) 100%);
+        top: -94px;
+    }
+
+    .s_c2{
+        width: 45%;
+        left: 239px;
+        bottom: -244px;
+        background: linear-gradient(306deg, #8a00d4 20%, #fd1851 100%);
+    }
+
+    .l_i_d{
+        width: 40%;
+        height: 75%;
+        background-color: #ffffff21;
+        border-radius: 15px;
+        backdrop-filter: blur(4px);
+        box-shadow: 12px 5px 5px rgba(0, 0, 0, 0.274);
+        box-shadow: 7px 10px 24px -4px rgb(20, 20, 20);
+        display: flex;
+        align-items: center;
+        padding: 2rem 0rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .in_part{
+            width: 100%;
+            // height: 30%;
+            // background-color: #8a00d4;
+            color: #f5f5f5b0;
+        }
+
+        .in_p1{
+            height: 15%;
+            font-size: 3rem;
+            display: grid;
+            place-items: center;
+            // background-color: #fd1851;
+        }
+        .in_p2{
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            .input_t{
+                width: 70%;
+                padding: 0.5rem;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #f5f5f5b0;
+                background: transparent;
+                font-size: 2rem;
+                color: #f5f5f5b0;
+            }
+        }
+        .in_p3{
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .log_btn{
+                padding: 1rem 5rem;
+                font-size: 2rem;
+                background-color: #f5f5f56e;
+                color: #000;
+                border-radius: 15px;
+                border: none;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover{
+                    padding: 1.1rem 6rem;
+                    border-radius: 17px;
+                    // color: #f5f5f56e;
+                    // background-color: #000;
+                }
+            }
+        }
+
+    }
+}
+
+// Login1 page
+
+.l1_m_d{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    @include flexCenter;
+    font-family: $primary-fnt;
+
+    .l1_in_d{
+        width: 60%;
+        height: 65%;
+        // background-color: aqua;
+        display: flex;
+
+        .in_p1{
+            width: 48%;
+            height: 100%;
+            // background-color: blueviolet;
+            background-image: url("../images/login1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }     
+        .in_p2{
+            width: 50%;
+            height: 100%;
+            // background-color:burlywood;
+            border-radius: 2px;
+            box-shadow: 1px 4px 11px -5px black;
+
+
+            // box-shadow: -2px 1px 12px -2px rgb(0 0 0 / 20%);
+            // border-radius: 1.5rem;
+            .form_head{
+                width: 100%;
+                height: 28%;
+                // background-color: chartreuse;
+                font-size: 4rem;
+                font-family: $sec-fnt;
+                @include flexCenter;
+                font-weight: bolder;
+            }
+
+            form{
+                width: 100%;
+                height: 76%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background: transparent;
+                // background-color: aquamarine;
+
+                .login_inner_form{
+                    width: 100%;
+                    height: 100%;
+                    padding: 1.5rem;
+                    // background-color: antiquewhite;
+
+                    .inner_form{
+                        width: 100%;
+                        // margin: .7rem 0rem; 
+                        // background-color: aqua;
+                        
+                        input{
+                            width: 100%;  
+                            padding: 1.3rem 2rem;
+                            // margin: 1rem;
+                            margin-top: 1.5rem;
+                            border-radius: 1rem;
+                            font-size: 1.8rem;
+                            outline: none;
+                            border:1px solid gray ;
+                            background: transparent;
+
+                            &:focus{
+                                border: 1px solid $nav-clr;
+                                box-shadow: 1px 1px 2px 1px rgba(16,128,234,.1);
+                            }
+                        }
+
+                        .btn_form{
+                            width: 100%;
+                            padding: 1.5rem 2rem; 
+                            border-radius: 1.5rem;
+                            outline: none;
+                            background-color: $nav-clr;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 2rem;
+                            font-weight: bold;
+                            color: #fff;
+                            margin-top: 1.5rem;
+                           
+                          }
+                    }
+
+                    .fgt_pass{
+                        width: 100%;
+                        // height: 30px;
+                        // background-color: aqua;
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        color: $nav-clr;
+                    }
+
+                    .form_navigate{
+                        width: 100%;
+                        height: 20%;
+                        // background-color: blueviolet;
+                        @include flexCenter;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
+
+.invalid_css{
+    border:1px solid red ;
+}
+
+/* CSS for Logout */
+
+.logout_page{
+    width: 100%;
+    height: 100vh;
+  }

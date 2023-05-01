@@ -1,0 +1,138 @@
+@import "variables";
+@import "mixin";
+
+.Notification_main_con{
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-outer-bg;
+    @include flexCenter;
+
+    .inner_notification{
+        width: 85%;
+        height: 85vh;
+        // background-color: aquamarine;
+        margin-top: 50px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        .notifi_cons{
+            width: 30%;
+            // height: 30vh;
+            // background-color: orange;
+
+        }
+
+        .left_notification_con{
+            width: 20%;
+            height: 18vh;
+            background-color: #ffff;
+            border-radius: 10px;
+
+            .l_parts{
+                width: 100%;
+                height: 50%;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background-color: aliceblue;
+            }
+
+            .l_p1{
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+            .l_p2{
+                font-size: 1.5rem;
+                color: gray;
+            }
+
+        }
+
+        .center_notification_con{
+            width: 49%;
+            height: 85vh;
+            border-radius: 15px;
+            overflow: hidden;
+            overflow: scroll;
+            scroll-behavior: smooth;
+           
+        }
+
+        .right_notification_con{
+            width: 23%;
+        }
+    }
+}
+
+
+// Student Calender cards
+.noti_cards{
+    width: 100%;
+    height: 18%;
+    background-color: #fff;
+    margin-bottom: 3px;
+    @include flexCenter;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.623);
+    }
+
+    .inner_noti_cards{
+        width: 98%;
+        height: 97%;
+        // background-color: antiquewhite;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .noti_cats_arts{
+            height: 60%;
+            // background-color: orangered;
+        }
+
+        .n_c_p1{
+            width: 10%;
+
+            img{
+                width: 100%;
+                height: 100%;
+
+            }
+        
+        }
+        .n_c_p2{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            font-size: 1.3rem;
+        }
+        .n_c_p3{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            .options_part{
+                width: 50%;
+                height: 40%;
+                // background-color: #fff;
+                // font-size: 2rem;
+                @include flexCenter
+            }
+
+            .o_p2{
+                font-size: 2rem;
+                border-radius: 40%;
+                // background-color: aquamarine;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

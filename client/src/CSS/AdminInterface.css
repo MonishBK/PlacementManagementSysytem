@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap");
+.main_ui_con {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bdbdbd42;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.main_ui_con .user_navbar {
+  width: 20vw;
+  height: 100vh;
+  background-color: #2387e2;
+  background-color: #fff;
+  box-shadow: -11px 12px 19px #202020d4;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_ui_con .user_navbar .user_nav_inner {
+  width: 98%;
+  height: 100%;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box1 {
+  width: 100%;
+  height: 20%;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box1 .school_name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Crete Round', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #0d67ff;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box1 .school_name span {
+  font-size: 1.8rem;
+  font-weight: 50;
+  color: #808080;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll {
+  width: 100%;
+  height: 90%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 {
+  width: 100%;
+  height: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_head {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: context-menu;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_body {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_body .item_box {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 490;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_body .item_box .inner_item {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_body .item_box .inner_item a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 6px;
+  display: flex;
+  font-size: 2.2rem;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_body .item_box .inner_item a span {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .inner_box_scroll .u_n_box2 .user_nav_items .u_body .item_box .inner_item:hover {
+  color: #0d67ff;
+  font-weight: 500;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items {
+  width: 90%;
+  height: 100%;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_head {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: context-menu;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_body {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_body .g_box {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_body .g_box .inner_g_box {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_body .g_box .inner_g_box a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 6px;
+  display: flex;
+  font-size: 2.2rem;
+  font-weight: 490;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_body .g_box .inner_g_box a span {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.main_ui_con .user_navbar .user_nav_inner .u_n_box3 .user_general_items .general_body .g_box .inner_g_box a:hover {
+  color: #0d67ff;
+  font-weight: 500;
+}
+
+.main_ui_con .user_nav_top {
+  width: 80vw;
+  height: 50px;
+  background-color: #ffff;
+  position: fixed;
+  box-shadow: 12px -11px 19px #202020d4;
+  margin-left: 20.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_ui_con .user_nav_top .inner_user_nav_top {
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main_ui_con .user_nav_top .inner_user_nav_top .user_pro_top {
+  width: 180px;
+  height: 85%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid #c5c0c08f;
+}
+
+.main_ui_con .user_nav_top .inner_user_nav_top .user_pro_top .user_pro_pic {
+  width: 20%;
+  height: 90%;
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+.main_ui_con .user_nav_top .inner_user_nav_top .user_pro_top .user_pro_pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.main_ui_con .user_nav_top .inner_user_nav_top .user_pro_top .user_pro_name {
+  width: 70%;
+  height: 90%;
+  overflow: hidden;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main_ui_con .user_nav_top .inner_user_nav_top .logout_icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.main_ui_con .user_body {
+  width: 80vw;
+  height: 91vh;
+  margin-left: 20vw;
+  margin-top: 55px;
+  overflow: hidden;
+}
+
+.main_ui_con .user_body .inner_ui_body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a.active {
+  color: #0d67ff;
+  font-weight: 500;
+}
+
+a.inactive {
+  color: #000;
+  font-weight: 450;
+}
+/*# sourceMappingURL=AdminInterface.css.map */

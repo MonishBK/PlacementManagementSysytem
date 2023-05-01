@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,wEAAI;AACZ,OAAO,CAAC,6EAAI;ADEZ,AAAA,gBAAgB,CAAA;EACZ,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,cAAc;CAEnC",
+    "sources": [
+        "../SCSS/StudentCards.scss",
+        "../SCSS/_variables.scss",
+        "../SCSS/_mixin.scss"
+    ],
+    "names": [],
+    "file": "StudentCards.css"
+}

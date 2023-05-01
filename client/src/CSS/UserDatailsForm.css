@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.User_amin_div {
+  widows: 100vw;
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.User_amin_div .inner_user_div {
+  width: 60%;
+  height: 95%;
+  background-color: aliceblue;
+}
+
+.User_amin_div .inner_user_div .u_from {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  /* padding-top: 20px; */
+  padding: 20px 180px;
+}
+
+.User_amin_div .inner_user_div .u_from .u_data_frm_div {
+  width: 90%;
+  margin: .7rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  /* background-color: chartreuse; */
+}
+
+.User_amin_div .inner_user_div .u_from .u_data_frm_div input {
+  width: 100%;
+  padding: 1.3rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  outline: none;
+  border: 1px solid gray;
+  background: transparent;
+}
+
+.User_amin_div .inner_user_div .u_from .u_data_frm_div textarea {
+  width: 100%;
+  padding: 1.3rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  outline: none;
+  /* border:1px solid gray ; */
+  background: transparent;
+  resize: none;
+}
+/*# sourceMappingURL=UserDatailsForm.css.map */

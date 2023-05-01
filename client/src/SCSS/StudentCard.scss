@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixin";
+
+.Std_card_con{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 5px;
+
+    .std_brif_list{
+        width: 100%;
+         height: 100%;
+        //  background-color: darkkhaki;
+         display: flex;
+         align-items: center;
+        justify-content: space-evenly;
+
+         .std_brif_parts{
+             width: 28%;
+            height: 100%;
+            @include flexCenter;
+            font-size: 1.8rem;
+             
+         }
+         .s_b_p1{
+            width: 10%;
+         }
+
+         .s_b_p5{
+            width: 5%;
+            cursor: pointer;
+            // background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .view_std:hover{
+                color: $nav-clr;
+            }
+
+            .del_std:hover{
+                color:red
+            }
+           
+         }
+    }
+
+}

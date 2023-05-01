@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+
+.placed_std_con{
+    width: inherit;
+    height: 90vh;
+    // background-color: antiquewhite;
+    @include flexCenter;
+
+    .inner_placed_con{
+        width: 70vw;
+        height: 80vh;
+        background-color: #fff;
+        padding: 30px;
+
+        h1{
+            border-bottom: 1px solid black;
+            padding: 15px;
+        }
+
+        .placed_body{
+
+            width: 60vw;
+            height: 70vh;
+            // background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            form{
+                width: 48vw;
+                height: 65vh;
+                // background-color: pink;
+
+                .placed_btn{
+                    margin-top: 25px;
+                    outline: none;
+                }
+            }
+        }
+
+    }
+
+}

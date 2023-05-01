@@ -1,0 +1,142 @@
+@import "variables";
+
+.footer{
+    width: 100%;
+    padding-bottom: 5px 0px;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(17, 17, 17); */
+    background-color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.footer_container{
+    width: 100%;
+    display: flex;
+}
+
+.footer_child{
+    height: 300px;
+    width: 25%;
+    // background-color: gray; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+    color: #000;
+
+    & .first{
+        font-size: 2.5rem;
+        padding-bottom: 5px;
+        cursor: auto;
+    }
+
+
+    & ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    & li{
+    // & .second{
+        list-style: none;
+        cursor: pointer;
+        padding-top: 0.3rem;
+
+        & a{
+            text-decoration: none;
+            color: #000;
+            transition: .2s;
+        }
+
+        & a:hover{
+            color: $nav-clr;
+        }
+    }
+}
+
+.footer_pms{
+
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+
+    .pms_logo{
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+        // background-color: greenyellow;
+        background-image: url(../images/MVIT-LOGO-high.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+}
+
+
+.footer_child_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: aqua;
+    color: #000;
+    font-size: 2.2rem;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover{
+        color: $nav-clr;
+    }
+}
+
+.footer_logs_sec{
+    padding: 0px 2rem;
+    /* background-color: #2ed573; */
+    display: flex;
+    justify-content: space-around;
+
+    & .footer_fb{
+        background-image: url(../images/fbicon.png);
+        background-size: cover;
+    }
+    & .footer_linkedin{
+        background-image: url(../images/linkedin.png);
+        background-size: cover;
+    }
+    & .footer_twitter{
+        background-image: url(../images/twittericon.png);
+        background-size: cover;
+    }
+    & .footer_gmail{
+        background-image: url(../images/gmailicon.png);
+        background-size: cover;
+    }
+}
+
+.footer_child2 ul li{
+    cursor: auto;
+}
+
+ .footer_logo{
+    width: 4.2rem;
+    height: 4.2rem;
+    cursor: pointer;
+    // background-color: blue; 
+}
+
+.footer p{
+    color: #fff;
+    font-size: 2rem;
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}

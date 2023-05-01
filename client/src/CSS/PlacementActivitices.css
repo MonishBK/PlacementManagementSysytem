@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.placed_std_con {
+  width: inherit;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placed_std_con .inner_placed_con {
+  width: 70vw;
+  height: 80vh;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.placed_std_con .inner_placed_con h1 {
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+
+.placed_std_con .inner_placed_con .placed_body {
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placed_std_con .inner_placed_con .placed_body form {
+  width: 48vw;
+  height: 65vh;
+}
+
+.placed_std_con .inner_placed_con .placed_body form .placed_btn {
+  margin-top: 25px;
+  outline: none;
+}
+/*# sourceMappingURL=PlacementActivitices.css.map */

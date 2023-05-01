@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.std_interface {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.std_nav_main {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  position: fixed;
+  z-index: 1000;
+}
+
+.std_nav_main .std_nav_inner {
+  width: 95%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.std_nav_main .std_nav_inner .std_nav_parts {
+  width: 30%;
+  height: inherit;
+}
+
+.std_nav_main .std_nav_inner .st_p1 {
+  width: 20%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Crete Round', serif;
+}
+
+.std_nav_main .std_nav_inner .st_p1 span {
+  color: #1080ea;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.std_nav_main .std_nav_inner .st_p2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.std_nav_main .std_nav_inner .st_p2 .nav_links {
+  width: 20%;
+  height: 80%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.std_nav_main .std_nav_inner .st_p3 {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.std_nav_main .std_nav_inner .st_p3 .pro_box_nav {
+  width: 70%;
+  height: 85%;
+  background-color: #fff;
+  border: 2px solid #c5c0c08f;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.std_nav_main .std_nav_inner .st_p3 .pro_box_nav .pro_inner_box_nav {
+  width: 98%;
+  height: 95%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.std_nav_main .std_nav_inner .st_p3 .pro_box_nav .pro_inner_box_nav .pro_img_nav {
+  width: 20%;
+  height: 90%;
+  background-color: #808080;
+  background-image: url("../images/pro_pic1.png");
+  border-radius: 50%;
+}
+
+.std_nav_main .std_nav_inner .st_p3 .pro_box_nav .pro_inner_box_nav .pro_img_nav img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.std_nav_main .std_nav_inner .st_p3 .pro_box_nav .pro_inner_box_nav .pro_name_nav {
+  width: 68%;
+  height: 90%;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.std_nav_main .std_nav_inner .st_p3 .log_out_nav {
+  width: 15%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+}
+/*# sourceMappingURL=StudentNavbar.css.map */

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.admin_notices_con {
+  width: 80vw;
+  height: 90vh;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.admin_notices_con .notices_con {
+  width: 90%;
+  height: 90vh;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.admin_notices_con .notices_con .upload_poster_area {
+  width: 80%;
+  height: 500px;
+  margin: 10px 0px 10px 0px;
+}
+
+.admin_notices_con .notices_con .poster_desc {
+  width: 80%;
+  height: 500px;
+}
+
+.admin_notices_con .notices_con .poster_desc textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.admin_notices_con .notices_con .poster_links {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin_notices_con .notices_con .poster_links input {
+  width: 82%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.admin_notices_con .notices_con .btn_area {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin_notices_con .notices_con .btn_area .choice_box {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin_notices_con .notices_con .btn_area .choice_box .inner_choice_box {
+  width: 70%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.admin_notices_con .notices_con .btn_area .choice_box .inner_choice_box select {
+  width: 50%;
+  outline: none;
+  border: 1px solid gray;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.5rem;
+}
+
+.admin_notices_con .notices_con .btn_area .only_btns {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin_notices_con .notices_con .btn_area .only_btns button {
+  padding: 8px 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 1.5rem;
+}
+
+.admin_notices_con .notices_con .btn_area .only_btns .btn_post {
+  background-color: #1080ea;
+  color: #fff;
+  border: 1px solid #1080ea;
+}
+
+.dag_drop {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: gray;
+  border: 2px dashed gray;
+  cursor: pointer;
+}
+
+.images_grid {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.images_grid button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.3rem;
+  padding: 5px 13px;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.img_pre {
+  width: 60px;
+  height: 60px;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.img_pre .img_preview {
+  width: 100%;
+  height: 100%;
+}
+
+.img_pre .delete_poster {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.img_pre .delete_poster:hover {
+  color: red;
+}
+/*# sourceMappingURL=AdminNotices.css.map */

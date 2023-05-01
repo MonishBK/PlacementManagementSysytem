@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.Notification_main_con {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e9e5df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Notification_main_con .inner_notification {
+  width: 85%;
+  height: 85vh;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Notification_main_con .inner_notification .notifi_cons {
+  width: 30%;
+}
+
+.Notification_main_con .inner_notification .left_notification_con {
+  width: 20%;
+  height: 18vh;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+.Notification_main_con .inner_notification .left_notification_con .l_parts {
+  width: 100%;
+  height: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Notification_main_con .inner_notification .left_notification_con .l_p1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.Notification_main_con .inner_notification .left_notification_con .l_p2 {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.Notification_main_con .inner_notification .center_notification_con {
+  width: 49%;
+  height: 85vh;
+  border-radius: 15px;
+  overflow: hidden;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.Notification_main_con .inner_notification .right_notification_con {
+  width: 23%;
+}
+
+.noti_cards {
+  width: 100%;
+  height: 18%;
+  background-color: #fff;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.noti_cards:hover {
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+.noti_cards .inner_noti_cards {
+  width: 98%;
+  height: 97%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.noti_cards .inner_noti_cards .noti_cats_arts {
+  height: 60%;
+}
+
+.noti_cards .inner_noti_cards .n_c_p1 {
+  width: 10%;
+}
+
+.noti_cards .inner_noti_cards .n_c_p1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.noti_cards .inner_noti_cards .n_c_p2 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.noti_cards .inner_noti_cards .n_c_p3 {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.noti_cards .inner_noti_cards .n_c_p3 .options_part {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noti_cards .inner_noti_cards .n_c_p3 .o_p2 {
+  font-size: 2rem;
+  border-radius: 40%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=StudentNotification.css.map */

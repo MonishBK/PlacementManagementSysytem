@@ -1,0 +1,276 @@
+@import"variables";
+@import "mixin";
+
+.admin_student_con{
+    width: 100%;
+    height: 80vh;
+    // background-color: aqua;
+    padding: 15px;
+
+    .student_header{
+        width: 100%;
+        height: 10%;
+        background-color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .std_hrd{
+            width: 35%;
+            height: 80%;
+            // background-color: chartreuse;
+            @include flexCenter;
+            font-size: 1.8rem;
+
+            label{
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            select{
+                width: 50%;
+                font-size: 1.8rem;
+                outline: none;
+            }
+            input{
+                padding: 3px;
+                font-size: 1.5rem;
+                outline: none;
+            }
+            button{
+                // width: 20%;
+                padding: 10px 25px;
+                border-radius: 10px;
+                font-size: 1.5rem;
+                outline: none;
+                border: 1px solid gray;
+                cursor: pointer;
+                // margin-left: 15px
+            }
+
+            .addcom{
+                text-decoration: underline;
+                color: $nav-clr;
+                cursor: pointer;
+            }
+        }
+
+        
+
+        .s_year{
+            display: flex;
+            width: 40%;
+            align-items: center;
+            justify-content: space-between;
+            // font-size: 1.5rem;
+
+            label{
+                // background-color: antiquewhite;
+                width: 60%;
+            }
+
+            .date_picker{
+                width: 60%;
+                // background-color: blue;
+            }
+        }
+        .btn_search{
+            width: 20%;
+            @include flexCenter;
+            justify-content: space-evenly;
+
+            button:nth-child(2){
+                background-color: $nav-clr;
+                color: #ffff;
+                border: 1px solid $nav-clr;
+            }
+        }
+    }
+
+    .cmp_heard{
+        // background-color: pink;
+        display: flex;
+        justify-content: space-evenly;
+
+        .cmp_hdr{
+            width: 30%;
+
+            .check_box{
+                width: 18px;
+                height: 18px;
+                padding: 10px;
+                // background-color: aquamarine;
+            }
+        }
+
+        .chk_div{
+            width: 8%;
+            // background-color: orange;
+            height: 70%;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: bold;
+        }
+    }
+
+    .student_list{
+
+        width: 100%;
+        height: 80vh;
+        // background-color: orange;
+        margin-top: 20px;
+        // overflow: scroll;
+        // scroll-behavior: smooth;
+        padding: 10px;
+
+        .std_hearder_row{
+            width: 100%;
+            height: 35px;
+            background-color: #ffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+
+            .std_hearder_parts{
+                width: 28%;
+                height: 100%;
+                @include flexCenter;
+                font-size: 1.8rem;
+                font-weight: bold;
+                // background-color: aquamarine;
+            }
+
+            .s_p1{
+                width: 10%;
+            }
+
+            .s_p5{
+                width: 5%;
+                // background-color: greenyellow;
+            }
+
+        }
+
+        .std_lists{
+            height: 70vh;
+            overflow: hidden;
+            overflow: scroll;
+            scroll-behavior: smooth;
+            // background-color: aqua;
+
+            .no_data{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+
+// React DatePicker
+
+.react-datepicker__year--container{
+    width: 250px;
+    height: 150px;
+}
+.react-datepicker__year .react-datepicker__year-text {
+    display: inline-block;
+    width: 5rem;
+    margin: 4px;
+    font-size: 1.5rem;
+}
+.react-datepicker__header {
+    text-align: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #aeaeae;
+    border-top-left-radius: 1.3rem;
+    padding: 10px 26px 10px 28px;
+    position: relative;
+}
+
+.react-datepicker__year .react-datepicker__year-text {
+    display: inline-block;
+    width: 5rem;
+    margin: 5px;
+}
+.react-datepicker__year-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
+.react-datepicker-year-header {
+    margin-top: 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.react-datepicker__year .react-datepicker__year-text {
+    display: inline-block;
+    width: 6rem;
+    margin: 5px;
+}
+
+
+// Add comany div css
+
+.add_comany_div{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.507);
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .inner_add_con{
+        width: 70vw;
+        height: 80vh;
+        background-color: #fff;
+        padding: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .disbale_btn{
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            font-size: 3rem;
+            cursor: pointer;
+
+            &:hover{
+                color: red;
+            }
+        }
+
+        .company_details{
+            width: 67.5vw;
+            height: 68vh;
+            // background-color: yellow;
+            @include flexCenter;
+
+            form{
+                width: 50vw;
+                height: inherit;
+                // background-color: #aeaeae;
+
+                .add_comp_btn{
+                    // width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}
